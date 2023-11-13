@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  rockylinux:
+    build: .
+    image: rockylinux_custom:8.8
+    container_name: rockylinux_cs5008
+    volumes:
+      - .:/home/student
+    ports:
+      - "8000:8000" # Example port, change as needed
